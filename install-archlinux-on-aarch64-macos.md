@@ -48,7 +48,7 @@ Create a new virtual machine.
 ``` yaml
 Name: Arch Linux
 Architecture: ARM64 (aarch64)
-RAM: 16 GB
+RAM: 8 GB
 Storage: 64 GB
 Enable hardware OpenGL acceleration: yes
 Enable directory sharing: yes
@@ -266,6 +266,7 @@ Finally, add a new user for daily use.
 ``` sh
 useradd -m -G wheel,users taupiqueur
 passwd taupiqueur
+echo '%wheel ALL=(ALL:ALL) ALL' >> /etc/sudoers
 ```
 
 [useradd(8)](https://man.archlinux.org/man/useradd.8)
