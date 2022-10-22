@@ -261,6 +261,14 @@ passwd
 
 [passwd(1)](https://man.archlinux.org/man/passwd.1)
 
+Delete the “alarm” user:
+
+``` sh
+userdel -r alarm
+```
+
+[userdel(8)](https://man.archlinux.org/man/userdel.8)
+
 Finally, add a new user for daily use.
 
 ``` sh
