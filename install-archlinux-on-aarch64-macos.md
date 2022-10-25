@@ -261,13 +261,15 @@ passwd
 
 [passwd(1)](https://man.archlinux.org/man/passwd.1)
 
-Delete the “alarm” user:
+Delete [the initial “alarm” user][Initial user accounts and OpenSSH 7.0]:
 
 ``` sh
 userdel -r alarm
 ```
 
 [userdel(8)](https://man.archlinux.org/man/userdel.8)
+
+[Initial user accounts and OpenSSH 7.0]: https://archlinuxarm.org/forum/viewtopic.php?t=9163
 
 Finally, add a new user for daily use.
 
