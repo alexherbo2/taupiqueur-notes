@@ -89,6 +89,8 @@ Open your favorite terminal emulator to ssh Alpine.
 ssh root@192.168.64.3
 ```
 
+[ssh(1)](https://man.archlinux.org/man/ssh.1)
+
 You can now copy/paste commands from your host—macOS—system.
 
 ## Install needed packages
@@ -190,6 +192,15 @@ Clear CD/DVD.
 
 ## Boot “Arch Linux” and run post-installation tasks
 
+You can use the “alarm” user Arch Linux ARM provides to ssh as root.
+
+``` sh
+ssh alarm@192.168.64.3 -t su
+```
+
+[ssh(1)](https://man.archlinux.org/man/ssh.1),
+[su(1)](https://man.archlinux.org/man/su.1)
+
 Log in as `root` with the password `root` and run the [post-installation tasks][Arch Linux ARM].
 
 ``` sh
@@ -261,15 +272,13 @@ passwd
 
 [passwd(1)](https://man.archlinux.org/man/passwd.1)
 
-Delete [the initial “alarm” user][Initial user accounts and OpenSSH 7.0]:
+Delete the “alarm” user:
 
 ``` sh
 userdel -r alarm
 ```
 
 [userdel(8)](https://man.archlinux.org/man/userdel.8)
-
-[Initial user accounts and OpenSSH 7.0]: https://archlinuxarm.org/forum/viewtopic.php?t=9163
 
 Finally, add a new user for daily use.
 
