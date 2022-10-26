@@ -198,6 +198,8 @@ You can use the “alarm” user Arch Linux ARM provides to ssh as root.
 ssh alarm@192.168.64.3 -t su
 ```
 
+Enter “alarm” and “root” as passwords.
+
 [ssh(1)](https://man.archlinux.org/man/ssh.1),
 [su(1)](https://man.archlinux.org/man/su.1)
 
